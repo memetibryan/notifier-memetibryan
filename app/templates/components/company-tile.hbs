@@ -1,0 +1,79 @@
+{{#if isCompanyFormShowing}}
+  <div {{action 'hideModal' company}} id="modal">
+    <div id="content">
+      <h1>Fill in your company Information</h1>
+      <form>
+        <div class="form-group">
+          <label for="name">Company name</label><br> {{input class="form-control" value=name id="name" placeholder="Company name goes here"}}
+        </div>
+        <div class="form-group">
+          <label for="location">Company Location</label><br> {{input class="form-control" value=location id="location" placeholder="Located at"}}
+        </div>
+        <div class="form-group">
+          <label for="details">Company Details</label><br> {{textarea class="form-control" value=details id="details" placeholder="A brief description of the company" cols=100 rows=3}}
+        </div>
+        <div class="form-group">
+          <label for="email">Email adress</label><br> {{input class="form-control" value=email id="email" placeholder="enter company email"}}
+        </div>
+        <div class="form-group">
+          <label for="senderemail">Sender Email</label><br> {{input class="form-control" value=senderemail id="senderemail" placeholder="This will be the visible email sent in your notifications"}}
+        </div>
+        <div class="form-group">
+          <label for="Phone">Phone number</label><br> {{input class="form-control" value=phone type=number id="phone" placeholder="Enter company phone number"}}
+        </div>
+        <div class="form-group">
+          <label for="category">Category</label><br> {{input class="form-control" value=category id="category" placeholder="e.g sports, tech"}}
+        </div>
+        <button {{action 'submitCompany' company}} class="submit">Submit</button>
+        <button {{action 'hideCompanyForm'}} class="cancel">Cancel</button>
+      </form>
+      <h5>&copy; notifier</h5>
+    </div>
+  </div>
+{{else}}
+  <div class="registerBtn"><button {{action 'showCompanyForm'}} class="companyBtn">Register Your Company</button></div>
+{{/if}}
+{{#if isSubscribeFormShowing}}
+  <div {{action 'hideModal1' company}} id="modal">
+    <div id="content1">
+      <h4>Welcome to notifier. Enter your details below.</h4>
+      <form>
+        <div class="form-group">
+          <label for="username">Name</label><br> {{input class="form-control" value=username id="username" placeholder="Your name goes here"}}
+        </div>
+        <div class="form-group">
+          <label for="useremail">Email address</label><br> {{input class="form-control" value=useremail id="useremail" placeholder="Your email"}}
+        </div>
+        <label for="userphone">Phone number</label><br> {{input class="form-control" type=number value=userphone id="userphone" placeholder="Your phone number"}}
+        <div class="form-group">
+        </div>
+        <div class="form-group">
+          <label for="userinterest">Your Interests</label><br> {{input class="form-control" value=userinterest id="userinterest" placeholder="e.g sports, music etc."}}
+        </div>
+        <div class="form-group">
+          <label for="userlocation">Your Location</label><br> {{input class="form-control" value=userlocation id="userlocation" placeholder="Where can we find you?"}}
+        </div>
+        <button {{action 'submitSubscriber'}} class="submit">Submit</button>
+        <button {{action 'hideSubscribeForm'}} class="cancel">Cancel</button>
+      </form>
+    </div>
+  </div>
+{{else}}
+  <div class="registerScb">
+    <button {{action 'showSubscribeForm'}} class="subscriberBtn">Register as Subscriber</button>
+  </div>
+{{/if}}
+<ul>
+  <div class="companiesList">
+    <h1>REGISTERED COMPANIES<hr></h1>
+    {{#each companies as |company|}}
+      <li>
+        <h2>{{#link-to 'company' company.id}}{{company.name}}    {{/link-to}}</h2>
+        <button {{action 'subscribe'}} class="subscribeBtn">Subscribe</button>
+        <h4>{{company.details}}.</h4>
+        <p>Located in {{company.location}}, Kenya.</p>
+        <p><span class="companyCategory">{{company.category}}.</span></p>
+      </li>
+    {{/each}}
+  </div>
+</ul>

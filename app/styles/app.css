@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis|Jaldi|Ubuntu|Baloo+Bhaina|Courgette|Great+Vibes|Montserrat|Patua+One|Raleway');
+
+/*font-family: 'Montserrat', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Patua One', cursive;
+font-family: 'Courgette', cursive;
+font-family: 'Baloo Bhaina', cursive;
+font-family: 'Great Vibes', cursive;
+font-family: 'Dosis', sans-serif;
+font-family: 'Jaldi', sans-serif;
+font-family: 'Ubuntu', sans-serif;*/
+
+body {
+  overflow-x: hidden;
+}
+
+
+/* START OF ENTER COMPANY INFORMATION FORM*/
+
+#modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  color: black;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+#content {
+  font-family: 'Raleway', sans-serif;
+  font-size: 17px;
+  color: #ff751a;
+  background-color: #ff751a;
+  /*background: url('http://www.mirsens.com/layout/images/global/blueDust.jpg')no-repeat center center fixed;*/
+  margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  width: 60%;
+  height: 120%;
+  border-radius: 6px;
+  text-align: center;
+}
+
+#content h1, h5 {
+  color: white;
+  background-color: #ff751a;
+  padding: 3px;
+}
+
+
+/*BUTTON STYLING*/
+
+.submit {
+  padding: 15px;
+  margin: 5px;
+  font-size: 17px;
+  border: 0px;
+  background-color: white;
+  border-bottom: 1px solid #ff751a;
+  color: #ff6600;
+}
+
+.submit:hover {
+  background-color: #ff751a;
+  color: white;
+}
+
+.cancel {
+  padding: 15px;
+  margin: 5px;
+  font-size: 17px;
+  border: 1px;
+  border-bottom: 1px solid black;
+  background-color: white;
+  /*background-color: #33bbff;*/
+  color: black;
+}
+
+.cancel:hover {
+  background-color: red;
+  color: white;
+  border-bottom: 1px solid red;
+}
+
+
+/* END OF ENTER COMPANY INFORMATION FORM*/
+
+
+/*START OF SUBSCRIBER FORM*/
+
+#content1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 17px;
+  color: #ff751a;
+  background-color: #ff751a;
+  margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 70%;
+  border-radius: 6px;
+  text-align: center;
+}
+
+#content1 h4 {
+  color: white;
+  background-color: #ff751a;
+  padding: 8px;
+}
+
+
+/*GENERAL FORM DESIGN*/
+
+form {
+  background-color: white;
+  padding: 10px;
+}
+
+
+/*GENERAL FORM DESIGN*/
+
+
+/*START OF COMPANIES LIST*/
+
+.companiesList {
+  text-align: left;
+  background-color: white;
+  color: #262626;
+  font-family: 'Raleway', sans-serif;
+  padding: 50px;
+  font-size: 16px;
+  margin-top: 0px;
+  /*background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.pexels.com/photos/327533/pexels-photo-327533.jpeg?w=940&h=650&auto=compress&cs=tinysrgb')no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-filter: contrast(120%);*/
+}
+
+.companiesList li {
+  border-bottom: 2px solid #cceeff;
+}
+
+.companyCategory {
+  font-family: 'Courgette', cursive;
+  font-size: 15px;
+}
+
+.companiesList ul, li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.companiesList h1 {
+  text-align: center;
+  color: #ff751a;
+  padding: 10px;
+  font-size: 40px;
+}
+
+.companiesList h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+}
+
+.companiesList a {
+  text-decoration: none;
+  color: #008ae6;
+}
+
+.companiesList a:hover {
+  /*border-bottom: 2px solid  #ff751a;*/
+  color: #ff751a;
+}
+
+.companyBtn {
+  border: 0px;
+  padding: 30px;
+  border-radius: 3px;
+  color: white;
+  font-family: 'Monserrat', sans-serif;
+  font-size: 20px;
+  background-color: #ff944d;
+}
+
+.companyBtn:hover {
+  background-color: #ff751a;
+}
+
+.subscriberBtn:hover {
+  background-color: #ff6600;
+}
+
+.subscriberBtn {
+  border: 0px;
+  padding: 33px;
+  border-radius: 3px;
+  color: white;
+  font-family: 'Monserrat', sans-serif;
+  font-size: 20px;
+  background-color: #ff944d;
+}
+
+.subscribeBtn {
+  float: right;
+  padding: 15px;
+  margin: 5px;
+  font-size: 17px;
+  border: 0px;
+  border-radius: 3px;
+  background-color: white;
+  border-bottom: 1px solid #ff751a;
+  color: #ff6600;
+}
+
+.subscribeBtn:hover {
+  background-color: #ff751a;
+  color: white;
+}
+
+.registerBtn {
+  margin: 15px;
+  text-align: center;
+}
+
+.registerScb {
+  margin: 15px;
+  text-align: center;
+}
+
+.navbar-fixed-top {
+  background-color: black;
+  border-bottom: 0px;
+  position: fixed;
+}
+
+.form-control {
+  width: 90%;
+  margin: auto;
+  padding: 10px;
+}
+
+.content {
+  text-align: center;
+}
+
+.head {
+  background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0)), url('http://images.techhive.com/images/article/2013/08/screenshot_1-100051590-orig.jpg')no-repeat center center fixed;
+  padding: 200px;
+  /*box-shadow: inset 0px 0px 150px 60px rgba(0, 0, 0, 0.8);*/
+  /*-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-filter: contrast(120%);*/
+  text-align: center;
+  color: white;
+}
+
+
+/*SUBSCRIBER PROFILE*/
+
+.subscriberPortal {
+  padding: 70px;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  background-color: #ff751a;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.subscriberDetails {
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  padding: 50px;
+}
+
+.glyphicon-envelope {
+  font-size: 70px;
+  color: #ff751a;
+  ;
+}
+
+.subscriberCompanies h2 {
+  color: #ff751a;
+  ;
+}
+
+.subscriberCompanies {
+  border-right: 1px solid #ff751a;
+  ;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.subscriberNews {
+  font-size: 20px;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+}
+
+.moreSubscriptions {
+  padding: 100px;
+  color: white;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0)), url('https://images.pexels.com/photos/29765/pexels-photo.jpg?w=940&h=650&auto=compress&cs=tinysrgb')no-repeat center;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /*-webkit-filter: contrast(120%);*/
+}
+
+.moreSubscriberBtn {
+  padding: 25px;
+  background-color: #ff751a;
+  ;
+  color: white;
+  text-align: center;
+  border: 0px;
+  border-radius: 6px;
+  font-size: 17px;
+  margin-top: 20px;
+}
+
+.moreSubscriberBtn:hover {
+  background-color: #e65c00;
+  color: white;
+}
+
+.moreSubscriptions h3 {
+  margin-top: 50px;
+}
+
+
+/*END OF SUBSCRIBER PROFILE*/
+
+footer {
+  text-align: center;
+  background-color: #ff751a;
+}

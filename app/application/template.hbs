@@ -1,0 +1,24 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li>
+          {{#link-to 'index'}}Home{{/link-to}}
+        </li>
+        <li>
+          {{#link-to 'company-profile'}}Company Profile{{/link-to}}
+        </li>
+        <li>
+          {{#link-to 'subscriber-profile'}}Subscriber Profile{{/link-to}}
+        </li>
+      </ul>
+    </div>
+    <!--/.nav-collapse -->
+  </div>
+</nav>
+<!-- {{#link-to 'company-profile'}} Profile{{/link-to}} -->
+{{outlet}}
+
+<!-- <footer>
+  <p>&copy; Notifier 2017</p>
+</footer> -->
